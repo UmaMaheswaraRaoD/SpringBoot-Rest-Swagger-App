@@ -61,10 +61,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- <plugin>
+			 <plugin>
 <groupId>org.jboss.as.plugins</groupId>
 <artifactId>jboss-as-maven-plugin</artifactId>
-<version>7.1.0.Final</version>
+<version>7.3.Final</version>
 <executions>
 <execution>
 <phase>install</phase>
@@ -79,15 +79,8 @@
 </configuration>
 </execution>
 </executions>
-</plugin> -->
-			<plugin>
-            <groupId>org.jboss.as.plugins</groupId>
-            <artifactId>jboss-as-maven-plugin</artifactId>
-            <version>7.3.Final</version>
-                <configuration>
-                  <hostname>127.0.0.1</hostname>
-                </configuration>
-        </plugin>
+</plugin>
+			
     </plugins>
 		
 	</build>
