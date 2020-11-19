@@ -62,10 +62,24 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-      <groupId>org.jboss.as.plugins</groupId>
-      <artifactId>jboss-as-maven-plugin</artifactId>
-      <version>7.4.Final</version>
-    </plugin>
+<groupId>org.jboss.as.plugins</groupId>
+<artifactId>jboss-as-maven-plugin</artifactId>
+<version>7.1.0.Final</version>
+<executions>
+<execution>
+<phase>install</phase>
+<goals>
+<goal>deploy</goal>
+</goals>
+<configuration>
+<hostname>localhost</hostname>
+<port>8080</port>
+<username>umamahesh</username>
+<password>umamahesh</password>
+</configuration>
+</execution>
+</executions>
+</plugin>
 		</plugins>
 	</build>
 
